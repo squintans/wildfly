@@ -1,0 +1,9 @@
+---
+wildfly_packages:
+  - java-1.8.0-openjdk-devel
+  - wget 
+  - unzip
+  - python2-pip
+
+wildfly_wildfly_version: '16.0.0'
+wildfly_wildfly_install: '/opt/wildfly'

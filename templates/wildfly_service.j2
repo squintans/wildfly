@@ -1,0 +1,13 @@
+[Unit]
+Description=WildFly Server
+After=httpd.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+Environment="JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk"
+Environment="JRE_HOME= /usr/lib/jvm/java-1.8.0-openjdk/jre"
+ExecStart=/opt/wildfly/bin/standalone.sh

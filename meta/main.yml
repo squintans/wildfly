@@ -1,0 +1,14 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: squintans
+  description: Wildfly Versions for Centos 7.
+  license: "license (GPLv2)"
+  min_ansible_version: 2.6
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - wildfly
