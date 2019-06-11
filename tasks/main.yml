@@ -58,9 +58,15 @@
       echo: yes
       timeout: 3
 
-# Templates
-- name: Service Wildfly Template
-  template: 
-    src: wildfly_service.j2
-    dest: /etc/systemd/system/wildfly.service
-  notify: restart-wildfly
+  # Templates
+  - name: Service Wildfly Template
+    template: 
+      src: wildfly_service.j2
+      dest: /etc/systemd/system/wildfly.service
+  
+  # Wildfly service.
+  - name: Wildfly service
+    service: 
+      name: wildfly
+      state: restarted
+      enabled: yes
